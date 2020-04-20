@@ -1,4 +1,4 @@
-﻿clear all
+clear all
 close all
 clc
 
@@ -11,6 +11,7 @@ As = 50;
 Gtopo = 10;
 Gp = 9;
 Gs = -40;
+G0db = 10;
 wp = 2*pi*fp;
 ws = 2*pi*fs;
 Os = wp/ws;
@@ -61,16 +62,17 @@ title('Filtro LP prototipo')
 
 % Ajustando para filtro HP
 syms s
-Hs(s) = Hp(1256.64/s);
+
+Hs(s) = Hp(wp/s);
 pretty(vpa(collect(Hs(s)),3))
 
 Dp = [1.94e21 6.57e24 1.62e28 1.33e31 1.75e34];
-Ho = [1.73e21*10^(10/20) 0 0 0 0];
+Ho = [1.73e21*10^(G0db/20) 0 0 0 0];
 
 figure(3)
 
 subplot(2,1,1)
-[h,w] = freqs(Ho,Dp);
+[h,w] = freqs(Ho,Dp,logspace(2, 5, 1000));
 semilogx(w/(2*pi),20*log10(abs(h))); grid on;
 
 % Mascaras
@@ -81,6 +83,7 @@ line([fs fs],[Gs Gtopo],'Color','red')
 line([fs 10e3],[Gtopo Gtopo],'Color','red')
 
 ylim([-60 30])
+xlim([10 1e4])
 ylabel('dB')
 xlabel('Hz')
 title(['Filtro HP Chebyshev Tipo 1 de ordem ', num2str(n),' com ajuste'])
@@ -95,9 +98,3 @@ title('Fase do filtro')
 
 [h,w] = freqs(Ho,Dp,[0,2*pi*40,2*pi*200]);
 valores_freqs = 20*log10(abs(h))
-
-
-
-
-
-
