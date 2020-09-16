@@ -1,0 +1,414 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage">
+<head>
+<title>HDL Check Report for 'PF/DUT'</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="file:///opt/MATLAB/R2015a/help/matlab/docstyle.css" type="text/css">
+
+<script type="text/javascript" src="file:///opt/MATLAB/R2015a/toolbox/hdlcoder/hdlcommon/icons/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="file:///opt/MATLAB/R2015a/help/matlab/docscripts.js"></script>
+        
+        
+        
+        <script type="text/javascript">
+
+$(document).ready(function () {
+                   $(".expandAllLink").trigger('click');
+            });
+
+            var suggestionsObj;
+            $(function() {
+            var searchField = $('#docsearch');
+            suggestionsObj = new Suggestions(getSuggestions, getMore, searchField);
+            });
+            
+            function getSuggestions() {
+            var text = suggestionsObj.searchField.val();
+            document.location='docsuggestion:' + text;
+            }
+            
+            function getMore(type) {
+            var text = suggestionsObj.searchField.val();
+            document.location='docsuggestion:' + type + ':' + text;
+            }
+        </script>
+        
+        <link href="file:///opt/MATLAB/R2015a/help/includes/product/css/ice_960.css" rel="stylesheet" type="text/css">
+        <link href="file:///opt/MATLAB/R2015a/toolbox/hdlcoder/hdlcommon/icons/HDLsite5.css" rel="stylesheet" type="text/css">
+        <link href="file:///opt/MATLAB/R2015a/help/includes/product/css/ice_doc_center.css" rel="stylesheet" type="text/css">
+        <link href="file:///opt/MATLAB/R2015a/help/includes/product/css/ice_doc_center_installed.css" rel="stylesheet" type="text/css">
+        <link href="file:///opt/MATLAB/R2015a/help/includes/product/css/ice_doc_center_print.css" rel="stylesheet" type="text/css" media="print">
+        <script type="text/javascript">
+            if (navigator.appName != "ICEbrowser") {
+            var cssStyleSheets = $("link").filter(function(){
+            var href = $(this).attr('href');
+            return $(this).attr('href') != "docstyle.css"  && href.indexOf("ice_doc_center_print.css") == -1});
+            var hrefElements = $.map(cssStyleSheets, function(elem) {
+            var href = $(elem).attr('href');
+            var hrefArray = href.split("/");
+            hrefArray[hrefArray.length - 1] = hrefArray[hrefArray.length - 1].replace("ice_", "");
+            return {
+            href: hrefArray.join("/"),
+            media: $(elem).attr('media')
+            };
+            });
+            cssStyleSheets.remove();
+            for (var i = 0; i < hrefElements.length; i++) {
+            if ($.browser.msie && $.browser.version <= 8) {
+            document.createStyleSheet(hrefElements[i].href);
+            } else {
+            var link = $('<link rel="stylesheet" href=' + hrefElements[i].href + ' type="text/css" />');
+            if (hrefElements[i].media) {
+            link.attr('media', hrefElements[i].media);
+            }
+            $('head').append(link);
+            }
+            }
+            }
+    </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<div class="container_192">
+<div class="grid_192">
+ <div class="page_container"><div class="content_frame">
+<h1>HDL Code Generation Check Report for 'PF/DUT'
+<a href="matlab:open_system('PF/DUT');">open model 'PF/DUT'</a><BR>
+Generated on 2020-08-11 07:28:47</h1>
+<H2>The following table describes blocks for which errors, warnings or messages were reported.</H2><BR>
+<TABLE>
+<TR><TD> <B>Simulink Blocks and resources</B> </TD><TD> <B>Level</B> </TD><TD> <B>Description</B> </TD></TR><TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/Input'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyDelay10_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyDelay11_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyDelay12_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyDelay13_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyDelay14_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyDelay15_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyDelay16_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyDelay2_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyDelay3_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyDelay4_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyDelay5_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyDelay6_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyDelay7_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyDelay8_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyDelay9_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyLSum10_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyLSum11_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyLSum12_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyLSum13_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyLSum14_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyLSum15_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyLSum16_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyLSum2_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyLSum3_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyLSum4_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyLSum5_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyLSum6_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyLSum7_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyLSum8_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/BodyLSum9_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/b(1)_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/b(10)_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/b(11)_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/b(12)_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/b(13)_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/b(14)_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/b(15)_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/b(16)_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/b(2)_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/b(3)_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/b(4)_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/b(5)_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/b(6)_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/b(7)_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/b(8)_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz/b(9)_out1'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/X'.</TD>
+</TR>
+<TR><TD>
+<a alt="hdlcoder:makehdl:RealsUnsupportedSL" href="matlab:hilite(get_param(char([80 70]),'object'),'none');open_system(char([80 70]))">PF</a>
+</TD>
+<TD>Warning</TD>
+<TD>Single or double data type found in HDL code. Floating point data types are not synthesizable. To fix this problem, change the data type of 'PF/DUT/FIRn15semQtz_out1'.</TD>
+</TR>
+</TABLE>
+<BR><BR> </div></div></div></div>
+                    <div class="grid_192">
+                        <div class="footer_container">
+                            <div class="footer">
+                                <ul class="footernav">
+                                    <li class="footernav_trademarks"><a href="/opt/MATLAB/R2015a/help/acknowledgments.html">Acknowledgments</a></li>
+                                    <li class="footernav_trademarks"><a href="/opt/MATLAB/R2015a/trademarks.txt">Trademarks</a></li>
+                                    <li class="footernav_patents"><a href="/opt/MATLAB/R2015a/patents.txt">Patents</a></li>
+                                    <li class="footernav_help"><a href="/opt/MATLAB/R2015a/license_agreement.txt">Terms of Use</a></li>
+                                </ul>
+                                <div class="copyright">&copy; 1994-2020 The MathWorks, Inc.</div>
+                            </div>
+                        </div>
+                    </div>
+
+        <script type="text/javascript">
+
+$(document).ready( setTimeout( function () {
+                   $(".expandAllLink").trigger('click');
+            }, 50 ) );
+
+            var suggestionsObj;
+            $(function() {
+            var searchField = $('#docsearch');
+            suggestionsObj = new Suggestions(getSuggestions, getMore, searchField);
+            });
+            
+            function getSuggestions() {
+            var text = suggestionsObj.searchField.val();
+            document.location='docsuggestion:' + text;
+            }
+            
+            function getMore(type) {
+            var text = suggestionsObj.searchField.val();
+            document.location='docsuggestion:' + type + ':' + text;
+            }
+        </script>
+        
+</body>
+</html>
